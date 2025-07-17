@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,24 +15,30 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 15 100% 60%; /* #FF6B35 */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 42 100% 65%; /* #FFD700 */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 105 100% 20%; /* #2D5016 */
+    --accent-foreground: 210 40% 98%;
+
+    /* Custom dinosaur colors */
+    --dinosaur-orange: 15 100% 60%; /* #FF6B35 */
+    --dinosaur-green: 105 100% 20%; /* #2D5016 */
+    --dinosaur-brown: 25 100% 25%; /* #8B4513 */
+    --dinosaur-gold: 42 100% 65%; /* #FFD700 */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 15 100% 60%;
 
     --radius: 0.5rem;
 
@@ -97,5 +105,15 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
   }
 }
